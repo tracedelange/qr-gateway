@@ -5,6 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def main():
 
+    print("Gateway reached, redirecting to dbdruid")
     # log visit with google analytics
     # redirect to reubeen.dbdruid.com
 
