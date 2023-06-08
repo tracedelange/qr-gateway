@@ -1,4 +1,4 @@
-from flask import Flask, redirect
+from flask import Flask, redirect, render_template
 
 app = Flask(__name__)
 
@@ -7,7 +7,5 @@ def main():
 
     print("Gateway reached, redirecting to dbdruid")
     # log visit with google analytics
-    # redirect to reubeen.dbdruid.com
 
-
-    return redirect("https://reubeen.dbdruid.com", code=308)
+    return render_template('layout.html')
